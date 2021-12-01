@@ -1,9 +1,16 @@
 import './App.css';
+import React from "react"
+import Header from "./components/Header"
+import Container from "./components/Container"
+import Footer from "./components/Footer"
+
 
 function App() {
   return (
     <div className="App">
-      <h1> Hello this is my Little Playlist! </h1>
+      <Header />
+      <Container />
+      <Footer />
     </div>
   );
 }
