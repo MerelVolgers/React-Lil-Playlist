@@ -46,11 +46,6 @@ class Container extends Component {
                     songs= {this.state.songs}
                     addSong={this.addSong}
                     emptyList = {this.emptyList}
-                    // title = {this.state.songs.title}
-                    // artist = {this.state.songs.artist}
-                    // genre = {this.state.songs.genre}
-                    // rating = {this.state.songs.rating}
-                    // deleteSong = {this.deleteSong}
                 />
                 
             </div>

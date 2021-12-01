@@ -7,7 +7,7 @@ function Genre ({id, genre}) {
             className = "singleItem" 
             key = {id}
         >
-            <span className = "song-title"> {genre || ""} </span> 
+            <span className = "song-genre"> {genre || ""} </span> 
 
         </li>
     )

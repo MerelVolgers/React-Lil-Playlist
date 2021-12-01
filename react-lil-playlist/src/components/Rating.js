@@ -7,7 +7,7 @@ function Rating ({id, rating}) {
             className = "singleItem" 
             key = {id}
         >
-            <span className = "song-title"> {rating || ""} </span> 
+            <span className = "song-rating"> {rating || ""} </span> 
 
         </li>
     )

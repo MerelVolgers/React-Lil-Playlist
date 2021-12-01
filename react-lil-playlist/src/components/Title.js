@@ -1,6 +1,6 @@
 import React from "react"
 
-function Title ({id, title, artist, genre, rating}) {
+function Title ({id, title}) {
 
     return(
         <li

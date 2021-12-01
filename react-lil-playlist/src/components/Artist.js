@@ -1,13 +1,13 @@
 import React from "react"
 
-function Artist ({id, title, artist, genre, rating}) {
+function Artist ({id, artist}) {
 
     return(
         <li
             className = "singleItem" 
             key = {id}
         >
-            <span className = "song-title"> {artist || ""} </span> 
+            <span className = "song-artist"> {artist || ""} </span> 
 
         </li>
     )
