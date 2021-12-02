@@ -1,6 +1,6 @@
 import React from "react"
 
-function SongItem ({id, title, artist, genre, rating, deleteSong}) {
+function SongItem ({id, title, artist, genre, rating, deleteSong, sortBy}) {
 
     return(
         <tr
@@ -12,10 +12,7 @@ function SongItem ({id, title, artist, genre, rating, deleteSong}) {
             <td> {genre || ""}  </td>
             <td> {rating || ""}  </td>
             
-            <button 
-                className="delete-song" 
-                onClick={ () => {deleteSong(id)} }
-            > Delete </button>
+            <button className="delete-song" onClick={ () => {deleteSong(id)} }> Delete </button>
         </tr>
     )
 }

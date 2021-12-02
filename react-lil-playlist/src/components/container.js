@@ -15,6 +15,8 @@ class Container extends Component {
         this.addSong = this.addSong.bind(this)
         this.emptyList = this.emptyList.bind(this)
         this.deleteSong = this.deleteSong.bind(this)
+        this.sortBy = this.sortBy.bind(this)
+        this.sortOther = this.sortOther.bind(this)
     }
 
     addSong = (song) => {
@@ -33,14 +35,43 @@ class Container extends Component {
             songs: []
         })
     }
-    
+
     deleteSong (id) {
         const updated = this.state.songs.filter (song => {
             return id !== Number(song.id)
         })
         this.setState({ songs: updated })
     }
+////////////////// sorting songs by key /////////////////////////////
 
+    sortBy = (key) => {
+        let sortedSongs = [...this.state.songs]
+        sortedSongs.sort( (a,b) => {
+            if (a[key] < b[key]) {
+                return -1
+            }
+            if (a[key] > b[key]) {
+                return 1
+            }
+            return 0
+        })
+        this.setState( {songs:sortedSongs} )
+    }
+
+    sortOther = (key) => {
+        let sortedSongs = [...this.state.songs]
+        sortedSongs.sort( (a,b) => {
+            if (a[key] < b[key]) {
+                return 1
+            }
+            if (a[key] > b[key]) {
+                return -1
+            }
+            return 0
+        })
+        this.setState( {songs:sortedSongs} )
+    }
+///////////////////////////////////////////////////////////////////////
     render() {
         return (
             <div className = "song-container">
@@ -54,6 +85,8 @@ class Container extends Component {
                     addSong={this.addSong}
                     emptyList = {this.emptyList}
                     deleteSong = {this.deleteSong}
+                    sortBy = {this.sortBy}
+                    sortOther = {this.sortOther}
                 />
                 
             </div>
