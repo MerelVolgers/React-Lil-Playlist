@@ -1,6 +1,6 @@
 import React from "react"
 
-function SongItem ({id, title, artist, genre, rating, deleteSong, sortBy}) {
+function SongItem ({id, title, artist, genre, rating, deleteSong}) {
 
     return(
         <tr

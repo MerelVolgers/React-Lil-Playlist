@@ -15,8 +15,8 @@ class Container extends Component {
         this.addSong = this.addSong.bind(this)
         this.emptyList = this.emptyList.bind(this)
         this.deleteSong = this.deleteSong.bind(this)
-        this.sortBy = this.sortBy.bind(this)
-        this.sortOther = this.sortOther.bind(this)
+        this.sortByAZ = this.sortByAZ.bind(this)
+        this.sortByZA = this.sortByZA.bind(this)
     }
 
     addSong = (song) => {
@@ -37,40 +37,25 @@ class Container extends Component {
     }
 
     deleteSong (id) {
-        const updated = this.state.songs.filter (song => {
+        const updatedList = this.state.songs.filter (song => {
             return id !== Number(song.id)
         })
-        this.setState({ songs: updated })
+        this.setState({ songs: updatedList })
     }
 ////////////////// sorting songs by key /////////////////////////////
 
-    sortBy = (key) => {
-        let sortedSongs = [...this.state.songs]
-        sortedSongs.sort( (a,b) => {
-            if (a[key] < b[key]) {
-                return -1
-            }
-            if (a[key] > b[key]) {
-                return 1
-            }
-            return 0
-        })
+    sortByAZ = (key) => {
+        const sortedSongs = [...this.state.songs]
+        sortedSongs.sort( (a,b) => (a[key].toLowerCase() < b[key].toLowerCase()) ? -1 : 1)
         this.setState( {songs:sortedSongs} )
     }
 
-    sortOther = (key) => {
+    sortByZA = (key) => {
         let sortedSongs = [...this.state.songs]
-        sortedSongs.sort( (a,b) => {
-            if (a[key] < b[key]) {
-                return 1
-            }
-            if (a[key] > b[key]) {
-                return -1
-            }
-            return 0
-        })
+        sortedSongs.sort( (a,b) => (a[key].toLowerCase() < b[key].toLowerCase()) ? 1 : -1)
         this.setState( {songs:sortedSongs} )
     }
+    
 ///////////////////////////////////////////////////////////////////////
     render() {
         return (
@@ -85,8 +70,8 @@ class Container extends Component {
                     addSong={this.addSong}
                     emptyList = {this.emptyList}
                     deleteSong = {this.deleteSong}
-                    sortBy = {this.sortBy}
-                    sortOther = {this.sortOther}
+                    sortByAZ = {this.sortByAZ}
+                    sortByZA = {this.sortByZA}
                 />
                 
             </div>
