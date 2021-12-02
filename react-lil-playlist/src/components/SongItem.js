@@ -14,8 +14,7 @@ function SongItem ({id, title, artist, genre, rating, deleteSong}) {
             
             <button 
                 className="delete-song" 
-                onClick={deleteSong}
-                data-id = {id}
+                onClick={ () => {deleteSong(id)} }
             > Delete </button>
         </tr>
     )

@@ -33,10 +33,10 @@ class Container extends Component {
             songs: []
         })
     }
-//////////////////////////////// delete a single song from list: not working yet
+    
     deleteSong (id) {
         const updated = this.state.songs.filter (song => {
-            return id !== Number(id)
+            return id !== Number(song.id)
         })
         this.setState({ songs: updated })
     }
