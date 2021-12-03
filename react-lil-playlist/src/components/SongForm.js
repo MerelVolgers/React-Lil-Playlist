@@ -33,7 +33,7 @@ class SongForm extends React.Component {
     render() {
         return(      
             <div className= "songForm">
-                <h2> Song Form </h2>
+                <h2> Add a new song to the list here: </h2>
 
                 <form className="songs-input" style={{width: "100%"}} onSubmit={this.onSubmit}>
                     <input
@@ -42,6 +42,7 @@ class SongForm extends React.Component {
                         name = "title"
                         placeholder = "Type title here..."
                         onChange = {this.onInput}
+                        className = "input"
                     />
 
                     <input
@@ -50,12 +51,14 @@ class SongForm extends React.Component {
                         name = "artist"
                         placeholder = "Type artist here..."
                         onChange = {this.onInput}
+                        className = "input"
                     />
 
                     <select
                         value = {this.state.genre}
                         name = "genre"
                         onChange = {this.onInput}
+                        className = "input"
                     >
                         <option value= "choose"> Choose genre </option>
                         <option value= "Pop"> Pop </option>
@@ -73,6 +76,7 @@ class SongForm extends React.Component {
                         max = "5"
                         placeholder="1-5"
                         onChange = {this.onInput}
+                        className = "input"
                     />
 
                     <button className = "button-new-input" type="submit"> Add To List! </button>

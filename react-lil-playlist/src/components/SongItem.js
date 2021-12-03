@@ -4,7 +4,6 @@ function SongItem ({id, title, artist, genre, rating, deleteSong}) {
 
     return(
         <tr
-            className = "singleItem" 
             key = {id}
         >
             <td> {title || ""} </td>
@@ -12,7 +11,7 @@ function SongItem ({id, title, artist, genre, rating, deleteSong}) {
             <td> {genre || ""}  </td>
             <td> {rating || ""}  </td>
             
-            <button className="delete-song" onClick={ () => {deleteSong(id)} }> Delete </button>
+            <td> <button className="button" onClick={ () => {deleteSong(id)} }> Delete </button> </td>
         </tr>
     )
 }

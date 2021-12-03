@@ -19,23 +19,27 @@ function SongList ({songs, addSong, emptyList, deleteSong, sortByAZ, sortByZA}) 
         <div className="songList">
             <h2> Song list: </h2>
 
-            <table style={{width: "100%"}} className= "table">
+            <table className= "table">
                 <thead className="table-head"> 
-                    <th className="table-head-row" > Title  
-                        <button type="submit" className="sort-button" onClick= { () => {sortByAZ("title")} }> Sort Title A-Z </button> 
-                        <button type="submit" className="sort-button" onClick= { () => {sortByZA("title")} }> Sort Title Z-A </button></th>
+                    
+                    <th className="table-head-row" > Title
+                        <button type="submit" className="button" onClick= { () => {sortByAZ("title")} }> Sort Title A-Z </button> 
+                        <button type="submit" className="button" onClick= { () => {sortByZA("title")} }> Sort Title Z-A </button></th>
                     
                     <th className="table-head-row"> Artist 
-                        <button type="submit" className="sort-button" onClick= { () => {sortByAZ("artist")} }> Sort Artist A-Z </button> 
-                        <button type="submit" className="sort-button" onClick= { () => {sortByZA("artist")} }> Sort Artist Z-A </button></th>
+                        <button type="submit" className="button" onClick= { () => {sortByAZ("artist")} }> Sort Artist A-Z </button> 
+                        <button type="submit" className="button" onClick= { () => {sortByZA("artist")} }> Sort Artist Z-A </button></th>
                     
                     <th className="table-head-row"> Genre  
-                        <button type="submit" className="sort-button" onClick= { () => {sortByAZ("genre")} }> Sort Genre A-Z </button> 
-                        <button type="submit" className="sort-button" onClick= { () => {sortByZA("genre")} }> Sort Genre Z-A </button></th>
+                        <button type="submit" className="button" onClick= { () => {sortByAZ("genre")} }> Sort Genre A-Z </button> 
+                        <button type="submit" className="button" onClick= { () => {sortByZA("genre")} }> Sort Genre Z-A </button></th>
                     
                     <th className="table-head-row"> Rating  
-                        <button type="submit" className="sort-button" onClick= { () => {sortByAZ("rating")} }> Sort Rating 1-5 </button> 
-                        <button type="submit" className="sort-button" onClick= { () => {sortByZA("rating")} }> Sort Rating 5-1 </button></th> 
+                        <button type="submit" className="button" onClick= { () => {sortByAZ("rating")} }> Sort Rating 1-5 </button> 
+                        <button type="submit" className="button" onClick= { () => {sortByZA("rating")} }> Sort Rating 5-1 </button></th> 
+
+                    <th></th>
+                
                 </thead>
                 
                 <tbody className="table-body">
@@ -43,7 +47,7 @@ function SongList ({songs, addSong, emptyList, deleteSong, sortByAZ, sortByZA}) 
                 </tbody>
             </table>
             
-            <button onClick={emptyList} className="empty-list-button"> Empty List </button>
+            <button onClick={emptyList} className="button"> Empty List </button>
         </div>
     )
 }

@@ -1,84 +1,123 @@
+.App{
+    background-color: #E9C891;
+    height: 100%;
+}
+
 .header{
-    background-color: blue;
-    margin: 5px;
+    background-color: #D06224;
     padding: 20px;
     text-align: center;
+    color: #E9C891;
 }
 
 .navigation{
-    background-color: pink;
-    margin: 5px;
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid black;
+    background-color: #D06224;
 }
 
 .nav-link {
     padding:10px;
     margin: 5px;
+    color: #E9C891;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: #8A8635;
 }
 
 .song-container{
-    background-color: green;
-    margin: 20px;
+    margin: 5px;
     padding: 20px;
+    background-color: #E9C891;
 }
 
 .songForm {
-    background-color: purple;
     padding: 10px;
+    width: 100%;
+}
+
+.input{
+    padding: 5px;
+    min-width: 20%;
+    background-color: #8A8635;
+    color:#E9C891;
+}
+
+.button-new-input{
+    padding: 20px;
+    margin: 2px;
+    border:solid;
+    border-color: #8A8635;
+    background-color: #E9C891;
+    border-radius: 80%;
+}
+
+.button-new-input:hover{
+    background-color: #8A8635;
 }
 
 .songList{
-    background-color: orange;
     list-style-type: none;
     padding:10px;
-}
-
-.song-header{
-    background-color: royalblue;
+    width: 100%;
 }
 
 .table{
     margin: 5px;
     padding: 5px;
-    border: red;
-    border-style: solid;
-    background-color: teal;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #D06224;
 }
 
-.table-head{
-    background-color: pink;
+th, td{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.table-head-row{
-    color:sienna;
+th{
+    height: 70px;
+    font-size: 20px;
+    background-color: #D06224;
+}
+
+td{
+    padding: 10px;
+    font-size: 16px;
+}
+
+tr:hover{
+    background-color: #8A8635;
 }
 
 .table-body{
-    color:red;
+    color: #E9C891;
 }
 
-.singleItem{
-    background-color: white;
-    border:double;
-    margin: 5px;
+.button{
     padding: 5px;
-    min-height: 20px;
+    margin: 2px;
+    border:solid;
+    border-color: #8A8635;
+    background-color: #E9C891;
 }
 
-.sort-button{
-    background-color: green;
-    color:white;
-}
-
-.empty-list-button{
-    background-color: black;
-    color:white;
+.button:hover{
+    background-color: #8A8635;
 }
 
 .footer{
-    background-color: pink;
-    margin: 5px;
-    padding: 20px;
+    margin: 10px;
+    padding: 40px;
     text-align: center;
+    color: #E9C891;
+    color: #D06224;
+    border-top: 1px black solid;
+    min-height: 100px;
 }
