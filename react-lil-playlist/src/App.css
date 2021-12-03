@@ -1,10 +1,10 @@
 .App{
     background-color: #E9C891;
-    height: 100%;
+    height: 1000px;
 }
 
 .header{
-    background-color: #D06224;
+    background-color: #AE431E;
     padding: 20px;
     text-align: center;
     color: #E9C891;
@@ -14,18 +14,18 @@
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid black;
-    background-color: #D06224;
+    background-color: #AE431E;
 }
 
 .nav-link {
     padding:10px;
-    margin: 5px;
+    margin: 10px;
     color: #E9C891;
     text-decoration: none;
 }
 
 .nav-link:hover{
-    background-color: #8A8635;
+    color:#8A8635
 }
 
 .song-container{
@@ -36,6 +36,7 @@
 
 .songForm {
     padding: 10px;
+    margin: 5px;
     width: 100%;
 }
 
@@ -84,7 +85,7 @@ th, td{
 th{
     height: 70px;
     font-size: 20px;
-    background-color: #D06224;
+    background-color: #AE431E;
 }
 
 td{
@@ -112,12 +113,40 @@ tr:hover{
     background-color: #8A8635;
 }
 
+.delete-button{
+    padding: 5px;
+    margin: 2px;
+    border:solid;
+    border-color: #8A8635;
+    background-color: #E9C891;
+}
+
+.delete-button:hover{
+    background-color: #AE431E;
+}
+
 .footer{
     margin: 10px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     color: #E9C891;
-    color: #D06224;
+    color: #AE431E;
     border-top: 1px black solid;
     min-height: 100px;
+}
+
+.main{
+    padding: 20px;
+    margin: 20px;
+}
+
+.icons{
+    color:#8A8635;
+    font-size: 30px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.icons:hover{
+    color: #AE431E;
 }

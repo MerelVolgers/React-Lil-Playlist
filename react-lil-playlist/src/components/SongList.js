@@ -17,7 +17,6 @@ function SongList ({songs, addSong, emptyList, deleteSong, sortByAZ, sortByZA}) 
 
     return(
         <div className="songList">
-            <h2> Song list: </h2>
 
             <table className= "table">
                 <thead className="table-head"> 

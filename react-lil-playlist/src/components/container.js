@@ -7,9 +7,11 @@ class Container extends Component {
         super()
         this.state = {
             songs: [
-                {id:1, title: "Bohemian Rhapsody", artist: "Queen", genre:"Rock", rating:"5"},
+                {id:1, title: "Way down we go", artist: "KALEO", genre:"Other", rating:"4"},
                 {id:2, title: "Deliver Me", artist: "The Milk", genre: "Rock", rating: "5"},
                 {id:3, title: "ChanChan", artist: "Buena Vista Social Club", genre: "Cuban", rating: "5"},
+                {id:4, title: "El Mismo Aire", artist: "Camilo", genre: "Other", rating: "5"},
+                {id:5, title: "Tata fatiguée", artist: "Vaudou Game", genre: "Afrobeat", rating: "4"},
             ]
         }
         this.addSong = this.addSong.bind(this)

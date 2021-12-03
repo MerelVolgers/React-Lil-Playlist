@@ -33,7 +33,7 @@ class SongForm extends React.Component {
     render() {
         return(      
             <div className= "songForm">
-                <h2> Add a new song to the list here: </h2>
+                <h3> Add a new song to the list here: </h3>
 
                 <form className="songs-input" style={{width: "100%"}} onSubmit={this.onSubmit}>
                     <input
@@ -64,7 +64,11 @@ class SongForm extends React.Component {
                         <option value= "Pop"> Pop </option>
                         <option value= "Reggae"> Reggae </option>
                         <option value= "Techno"> Techno </option>
+                        <option value= "Afrobeat"> Afrobeat </option>
+                        <option value= "Reggeaton"> Reaggeaton </option>
                         <option value= "Rock"> Rock </option>
+                        <option value= "Soul"> Soul </option>
+                        <option value= "Rock"> Bossanova </option>
                         <option value= "Other"> Other </option>
                     </select>
 
